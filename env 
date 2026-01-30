@@ -1,0 +1,15 @@
+# =========================================
+# SQL Server Config
+# =========================================
+
+MSSQL_IMAGE_VERSION=2022-latest
+MSSQL_CONTAINER_NAME=sqlserver_server
+MSSQL_RESTART=no # Restart policy (pilihan: no, always, on-failure, unless-stopped)
+MSSQL_PORT=1433
+# MSSQL_SA_PASSWORD=MSSQL!passW0rD
+MSSQL_PID=Developer
+MSSQL_TZ=Asia/Jakarta
+# MSSQL_DATA_PATH=~
+MSSQL_HEALTHCHECK_INTERVAL=10s
+MSSQL_HEALTHCHECK_TIMEOUT=5s
+MSSQL_HEALTHCHECK_RETRIES=10
