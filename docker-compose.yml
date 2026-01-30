@@ -1,5 +1,6 @@
 services:
   sqlserver:
+    user: root
     image: mcr.microsoft.com/mssql/server:${MSSQL_IMAGE_VERSION:-2022-latest}
     container_name: ${MSSQL_CONTAINER_NAME:-sqlserver_server}
     restart: ${MSSQL_RESTART:-always}
